@@ -12,7 +12,7 @@ html{
 }
 
 .wrapper {
-    max-width: 1240px;
+    max-width: 1200px;
     margin:0 auto;
 }
 
@@ -34,6 +34,11 @@ html{
     background-color:rgba(24,24,153,0.78);
     color:white;
     text-decoration:none;
+    font-size: 1rem;
+    padding:0.9rem 0.6rem;
+    font-family: 'Cormorant Garamond', serif;
+     font-weight: 600;
+     text-transform:uppercase; 
 }
 
 /* HEADER STYLES */
@@ -138,56 +143,76 @@ header{
 
 .gallerySection{
     text-align:center;
-    outline: 2px solid darkslategrey;
 }
 
 .gallerySection h3{
     font-family: 'Cormorant Garamond', serif;
      font-weight: 600;
      font-size:2.5rem;
+    padding: 2rem 0;
+    text-transform:uppercase;
+}
+
+.firstGalleryLeft,
+.firstGalleryCenter,
+.firstGalleryRight {
+    width: calc(( 100% - 5rem )/3);
+    float: left;
+}
+
+.firstGalleryLeft {
+    margin-right: 1.25rem;
+}
+
+.firstGalleryCenter{
+    margin: 0 1.25rem;
+}
+
+.firstGalleryRight{
+    margin-left: 1.25rem;
 }
 
 .firstGallery img {
-    float: left;
-    width: 33.3%;
+    width: 100%;
    
 }
 
-.galleryImage1{
-    padding-right: 1.5rem;
-}
 
-.galleryImage2{
-    padding-left:1.5rem;
-    padding-right:1.5rem;
-    height: 100%;
-}
-
-
-
-.galleryImage3 {
-    padding-left:1.5rem;
-}
 
 /* WEEKLY HIGHLIGHT SECTION */
 .weeklyHighlight{
-    outline: 2px solid darkolivegreen;
+    clear:both;
+    width:100%;
+   padding: 5rem 0 2rem 0;
+
+}
+
+.weeklyHighlightLeft{
+    float:left;
+    width:26%;
+}
+
+.weeklyHighlightRight{
+    width:74%;
+    float:right;
+    padding-left: 2rem;
 }
 
 .weeklyHighlightImage {
-    width: 30%;
-    float: left;
+    width: 100%;
+   
+   
 }
 
 .weeklyHighlightImage img{
     width:100%;
 }
 
-.weeklyHighlightInfo {
-   
+
+.weeklyHighlightInfo { 
     font-size: .7rem;
     width: 100%;
-
+  
 }
 
 .weeklyHighlightInfo p, .weeklyHighlightInfo h4 {
@@ -195,12 +220,26 @@ header{
     margin:0;
 }
 
+.weeklyHighlightInfo h4 {
+    font-size: 2.1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    padding-bottom:.5rem;
+}
+
+.weeklyHighlightInfo p {
+    font-size:1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-bottom:2.6rem;
+}
+
 /* SQUARE GALLERY STYLES */
 
 .squareGallery {
-    outline: 2px solid darkcyan;
-    float:left;
-    
+    float:left;   
 }
 
 
@@ -217,24 +256,59 @@ header{
 .squareGallery--BottomImage img{
     width: 100%;
     height: 100%;
-    
-    
+}
+
+.squareGallery--TopInfo{
+   padding: 5rem 3rem 0 10rem;
+}
+
+.squareGallery--BottomInfo{
+    padding: 5rem 10rem 0 3rem;
+}
+
+.squareGallery--TopInfo h5{
+    width: 60%;
+}
+
+.squareGallery h5 {
+    font-size: 1.7rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    margin:0;
+}
+
+.squareGallery p {
+    font-size:1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-bottom:2.6rem;
+
 }
 
 /* THREE LINKS SHOPPING SECTION */
 
 .shoppingLinksContainer{
     clear:both;
-    outline:palevioletred 2px solid;
     background-image: url('./assets/assets_One-home_2019-01-22/oscar-aguilar-327500-unsplash.jpg');
    
-   
-    
 }
 
 .shoppingLinks {
   margin: 0 auto;
- max-width: 50%;
+ max-width: 60%;
+}
+
+.shoppingLinks p {
+    font-size: 1.6rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+
+.shoppingLinks i {
+    font-size: 2.1rem;
 }
 
 .shopBrands,
@@ -263,9 +337,34 @@ header{
     
 }
 
+footer h6{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform:uppercase;
+}
+
 .subscriptionForm h6{
     padding:0;
     margin: 0;
+}
+
+.subscriptionForm p {
+     font-family: 'Roboto', sans-serif;
+     font-weight:300;
+    line-height: 1.5rem;
+}
+
+input[type='email']{
+    border:none;
+    width:  24rem;
+    
+}
+
+input[type='email']::placeholder{
+     font-family: 'Roboto', sans-serif;
+     color:#1f2022;
+     font-weight: 300;
 }
 
 .contactInfo{
@@ -287,3 +386,13 @@ header{
 }
 
 /* Copyright Section */
+
+.copyright{
+    background-color: #acacac;
+}
+
+.copyright p {
+    margin:0;
+    padding:0;
+
+}
