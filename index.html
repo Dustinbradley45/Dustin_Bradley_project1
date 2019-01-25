@@ -12,24 +12,46 @@
 </head>
 <body>
     <header>
+        <!-- HAMBURGER MENU -->
+        <section class="navigation ">
+            <label for="nav-toggle" class="nav-button">
+                <i class="fas fa-bars nav-icon"></i>
+                </label>
+            <input type="checkbox" class="nav-checkbox" id="nav-toggle">
+            <nav class="nav-content">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                </ul>
+                <div class="hiddenSocials clearfix">
+                    <ul>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-snapchat-ghost"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
 
         <!-- HEADER START -->
         <div class="mainHeader ">
             <div class="wrapper">
-            <h2 class="logo">One</h2>
+                <h2 class="logo">One</h2>
 
-            <!-- NAV SECTION -->
-            <nav>
-                <ul class='navMenu'>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Blog</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>
-            </nav>
-
+                <!-- NAV SECTION -->
+                <nav>
+                    <ul class='navMenu'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Blog</a></li>
+                        <li><a href='#'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-</div>
         <!-- HEADER BODY -->
         <div class="mainTitle">
             <h1><span class="italic">One</span> <span class='lowerTitle'>Magazine</span></h1>
@@ -48,7 +70,7 @@
         <!-- NEWS ARTICLE GALLERY SECTION -->
      <section class='gallerySection wrapper'>
         <h3>News Articles</h3>
-        <div class="firstGallery">
+        <div class="firstGallery clearfix">
             <div class="firstGalleryLeft">
                 <img src="./assets/assets_One-home_2019-01-22/image-2_2.jpg" alt="">
             </div>
@@ -71,7 +93,7 @@
         <div class="weeklyHighlightRight">
             <article class="weeklyHighlightInfo">
                 <h4>This weeks highlight</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium aspernatur incidunt ipsum quasi, dicta mollitia ut placeat quidem corporis velit labore repellat voluptatibus ratione! Ducimus molestias consequuntur ipsa non! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magni voluptate placeat possimus quae, illo sed reprehenderit distinctio ducimus ipsam suscipit necessitatibus nesciunt. Ipsum id dolores maxime dicta sint voluptatem! </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium aspernatur incidunt ipsum quasi, dicta mollitia ut placeat quidem corporis velit labore repellat voluptatibus ratione! Ducimus molestias consequuntur ipsa non! </p>
                 <a href="#" class='readMore'>Read More</a>
             </article>
         </div>
@@ -80,14 +102,14 @@
     <!-- SQUARE GALLERY  -->
     <section class="squareGallery clearfix">
         <div class="squareGallery--Top">
-            <article class="squareGallery--TopInfo">
-            <h5>New trends to look out for</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati odio maiores voluptas blanditiis nemo natus eligendi repellendus reprehenderit illo. Minus corporis in beatae voluptatem, corrupti maiores nihil odit vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo nobis ipsum, molestiae officia aspernatur tempora delectus aperiam magni, blanditiis neque! Numquam, aut? Labore aut et fuga laborum hic expedita? </p>
-            <a href="#" class="readMore">Read More</a>
-            </article>
             <figure class='squareGallery--TopImage'>
                 <img src="./assets/assets_One-home_2019-01-22/image-2.jpg" alt="">
             </figure>
+            <article class="squareGallery--TopInfo">
+            <h5>New trends to look out for</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati odio maiores voluptas blanditiis nemo natus eligendi repellendus reprehenderit illo. Minus corporis in beatae voluptatem, corrupti maiores nihil odit vel. </p>
+            <a href="#" class="readMore">Read More</a>
+            </article>
         </div>
         <div class="squareGallery--Bottom">
             <figure class='squareGallery--BottomImage'>
@@ -95,31 +117,31 @@
             </figure>
             <article class="squareGallery--BottomInfo ">
                 <h5>Behind the scenes from spring/summer fashion week</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt, debitis quis nihil quia porro delectus odio ab quod illo ipsum! Illum rerum debitis odio tenetur facilis aperiam! Explicabo, earum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatibus cumque veniam harum, voluptatum in officiis, nemo dolor adipisci, reiciendis distinctio atque aliquam doloribus molestias nam eligendi vero voluptas placeat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt, debitis quis nihil quia porro delectus odio ab quod illo ipsum! Illum rerum debitis odio tenetur facilis aperiam! Explicabo, earum.</p>
                 <a href="#" class='readMore'>Read More</a>
             </article>
             </div>
         </div>
     </section>
-    
-    <!-- THREE LINKS SHOPPING SECTION -->
-    <section class='shoppingLinksContainer clearfix'>
-        <div class="shoppingLinks clearfix">
-            <div class="shopBrands">
-                <i class="fas fa-shopping-bag"></i>
-                <p>Shop brands</p>
-            </div>
-            <div class="community">
-                <i class="fas fa-users"></i>
-                <p>Community</p>
-            </div>
-            <div class="events">
-                <i class="fas fa-calendar-check"></i>
-                <p>Events</p>
-            </div>
+</main>
+
+<!-- THREE LINKS SHOPPING SECTION -->
+<aside class='shoppingLinksContainer clearfix'>
+    <div class="shoppingLinks clearfix">
+        <div class="shopBrands">
+            <i class="fas fa-shopping-bag"></i>
+            <p>Shop brands</p>
         </div>
-    </section>
-    </main>
+        <div class="community">
+            <i class="fas fa-users"></i>
+            <p>Community</p>
+        </div>
+        <div class="events">
+            <i class="fas fa-calendar-check"></i>
+            <p>Events</p>
+        </div>
+    </div>
+</aside>
     <footer>
         <section class="mainFooterContent clearfix">
             <div class="wrapper">

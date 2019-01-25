@@ -17,8 +17,8 @@ html{
 }
 
 /* MAIN STYLES */
-/* 
 
+/* FONT STYLES
     font-family: 'Cormorant Garamond', serif;
 
     font-family: 'Roboto', sans-serif;
@@ -40,6 +40,89 @@ html{
      font-weight: 600;
      text-transform:uppercase; 
 }
+
+/* HAMBURGER NAV */
+
+.navigation{
+    display:none;
+}
+
+.nav-checkbox{
+  float:right;
+  margin:35px;
+  display:none;
+}
+
+.nav-button{
+    color:white;
+    height:4rem;
+    width:4rem;
+    position:fixed;
+    top:0;
+    right:0;
+    text-align:center;
+    cursor:pointer;
+}
+
+.nav-icon{
+    position:relative;
+    margin-top: 2.5rem;
+    color:white;
+    font-size: 2rem;
+    margin-right:1rem
+}
+
+.nav-content{
+    display:none;
+    position:absolute;
+    margin:0 auto;
+    right:0;
+    top:9%;
+    text-align:right;
+    padding-right:22px;
+    margin-right: 22px;
+    background-color:rgba(24,24,153,0.78);
+   border-radius: 10px;
+    font-family:'Catamaran', sans-serif;
+    font-size: 1em;
+    padding:10px;
+    
+}
+
+.nav-content ul{
+    padding:0;
+    margin:0;
+}
+
+.nav-content li{
+    list-style:none;
+    margin: 5px;
+   
+}
+
+.nav-content a {
+    text-decoration:none;
+     color:white;
+     text-transform:uppercase;
+}
+
+.hiddenSocials{
+   padding-top: 20px;
+}
+
+.hiddenSocials li{
+    float:left;
+    color:white;
+    padding: 10px;
+}
+
+
+
+input[type='checkbox']:checked + .nav-content{
+    display:block;
+}
+
+
 
 /* HEADER STYLES */
 header{
@@ -135,7 +218,7 @@ header{
 
 .socialNetwork ul li{
     color:white;
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
 
@@ -239,17 +322,24 @@ header{
 /* SQUARE GALLERY STYLES */
 
 .squareGallery {
-    float:left;   
+    float:right;
 }
 
 
+.squareGallery--Top{
+    float:left;
+}
+
 .squareGallery--TopImage,
-.squareGallery--TopInfo,
+.squareGallery--TopInfo{
+    float: right;
+     width: 50%;
+
+}
 .squareGallery--BottomImage,
 .squareGallery--BottomInfo{
-   float: left;
-    width: 50%;
-  
+  float:left;
+  width: 50%;
 }
 
 .squareGallery--TopImage img,
@@ -259,11 +349,12 @@ header{
 }
 
 .squareGallery--TopInfo{
-   padding: 5rem 3rem 0 10rem;
+   padding: 4rem 3rem 0 6rem;
 }
 
 .squareGallery--BottomInfo{
-    padding: 5rem 10rem 0 3rem;
+    padding: 4rem 6rem 0 3rem;
+   
 }
 
 .squareGallery--TopInfo h5{
@@ -316,7 +407,7 @@ header{
 .events{
     color:white;
     float:left;
-    padding:3rem;
+    padding:2rem;
     font-size: 1.5rem;
     text-align:center;
 }
@@ -326,8 +417,10 @@ header{
 /* Main Footer */
 .mainFooterContent{
     background-color:#e3e3e3;
-    padding:0;
+    
     margin:0;
+    padding:4.5rem 0 4.2rem 0;
+    
     
 }
 
@@ -342,12 +435,10 @@ footer h6{
     font-weight: 600;
     font-size: 1.2rem;
     text-transform:uppercase;
-}
-
-.subscriptionForm h6{
-    padding:0;
+      padding:0;
     margin: 0;
 }
+
 
 .subscriptionForm p {
      font-family: 'Roboto', sans-serif;
@@ -358,7 +449,9 @@ footer h6{
 input[type='email']{
     border:none;
     width:  24rem;
-    
+    padding: 15px;
+    line-height: 1rem;
+    float: left;
 }
 
 input[type='email']::placeholder{
@@ -367,8 +460,31 @@ input[type='email']::placeholder{
      font-weight: 300;
 }
 
+.footerButton {
+   color:white;
+   background-color:black;
+   font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    padding:15px;
+    line-height:1rem;
+    text-transform: uppercase;
+    border:none;
+    letter-spacing: .1rem;
+    
+
+}
+
 .contactInfo{
     float:left;
+    padding-left:5.5rem;
+}
+
+.contactInfo p {
+    font-family:'roboto', sans-serif;
+    font-weight: 300;
+    margin:0;
+    padding:0;
+    line-height:1.5rem;
 }
 
 .footerNavLinks {
@@ -382,17 +498,322 @@ input[type='email']::placeholder{
 
 .footerNavLinks a {
     text-decoration:none;
-    color:black;   
+    font-family: 'Catamaran', sans-serif;
+    color:#040404;
+    line-height: 1.5rem;
 }
 
 /* Copyright Section */
 
 .copyright{
     background-color: #acacac;
+   padding: .5rem;
+   text-align:center;
 }
 
 .copyright p {
     margin:0;
     padding:0;
+    font-family:'Roboto', sans-serif;
+    line-height: 1.5rem;
 
 }
+
+/* @MEDIAQUERIES */
+
+@media screen and (max-width:1325px){
+   .shoppingLinks{
+      max-width:80%;
+      
+       
+   }
+   
+   
+}
+
+
+
+@media screen and (max-width: 1275px) {
+    
+
+    .squareGallery--TopInfo{
+         padding: 1rem 3rem 0 4rem;
+    }
+    
+    .squareGallery--BottomInfo{
+        padding: .5rem 3rem 0 2rem;
+    }
+    
+   
+}
+
+@media screen and (max-width: 1155px){
+    .squareGallery--TopInfo{
+         padding: 0 2rem 0 1rem;
+    }
+
+    .squareGallery p {
+        line-height: 1.3;
+        padding-bottom:1.7rem
+    }
+
+    #emailInput{
+        width: 47%;
+    }
+    .footerButton{
+        width: 23%;
+        font-size:.7rem
+    }
+
+    .contactInfo{
+        padding-left:2rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .squareGallery--TopInfo{
+    clear:both; 
+    padding:0;
+    margin:0 ;
+    width: 100%;
+    line-height:1.5rem;
+    text-align:center;
+   padding-bottom: 50px;
+    } 
+    .squareGallery--TopInfo h5{
+        width: 100%;
+    }
+   
+
+     .squareGallery--TopImage{
+        width:100%;
+      
+
+    }
+    
+
+    .squareGallery--BottomImage{
+        clear:both;
+        width: 100%;
+    }
+
+    .squareGallery--BottomInfo{
+        width: 100%;
+        padding:0;
+        margin:0;
+        text-align:center;
+    }
+     
+    .shopBrands,
+    .community,
+    .events{
+       padding:1.4rem;
+       
+    } 
+
+    .squareGallery{
+        margin-bottom:3rem;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .weeklyHighlightLeft{
+        width: 40%;
+    }
+    .weeklyHighlightRight{
+        width: 50%;
+        padding:0;
+    
+    }
+    .weeklyHighlightRight h4 {
+        font-size: 1.7rem;
+    }
+
+    .shopBrands,
+    .community,
+    .events{
+       padding:.8rem;
+       float:none;
+    }
+    
+    .shoppingLinksContainer{
+        background-repeat:no-repeat;
+        background-size:cover;  
+        
+    }
+
+      .contactInfo{
+        padding-left:0rem;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .subscriptionForm{
+        width:90%;
+        text-align:center;
+        margin-left: 5%;
+        padding-bottom:20px;
+        
+    }
+
+    #emailInput{
+        width:100%;
+        margin-bottom: 2%;
+        text-align:center;
+    }
+
+    .footerButton{
+        width:100%;
+    }
+
+    .contactInfo{
+        padding:0;
+        margin-left:5%;
+    }
+    .footerNavLinks{
+        margin-right:5%
+    }
+    
+}
+
+
+@media screen and (max-width: 800px){
+
+.italic{
+    font-size:10rem;
+}
+
+.lowerTitle{
+    font-size: 6rem;
+    bottom: 70px;
+}
+}
+
+
+@media screen and (max-width: 700px) {
+    .navigation{ 
+        display: block;
+    }
+    
+    .navMenu{
+        display:none;
+    }    
+    
+
+    .gallerySection{
+        max-width: 90%;
+     
+  
+     
+    }
+
+    .gallerySection h3{
+        font-size: 1.5rem;
+    }
+
+    .firstGalleryRight{
+        display:none;
+        position:absolute;
+    }
+    
+    
+    .firstGalleryLeft,
+    .firstGalleryCenter{
+        width: calc(50% - .5rem);
+    }
+    
+    .firstGalleryLeft img,
+    .firstGalleryCenter img{
+        width: 100%;
+        
+    }
+
+    .firstGalleryCenter{
+   
+      margin-right: 0;
+      margin-left: .5rem
+    }
+
+    .firstGalleryLeft{
+        margin-right: .5rem;
+    }
+    
+    .socialNetwork{
+        display:none;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .mainTitle{
+        position:relative;
+        top:10rem;
+    }
+}
+
+    
+    @media screen and (max-width: 650px) {
+        .weeklyHighlight{
+            float:left;
+        }
+    
+        .weeklyHighlightLeft,
+        .weeklyHighlightRight{
+            width: 100%;
+    
+        }
+
+        .weeklyHighlightRight h4{
+            text-align:center;
+        }
+
+        .weeklyHighlight .readMore{
+            text-align:center;
+            position:relative;
+            left:40%;
+        }
+
+        .italic{
+            font-size: 7.5rem;
+        }
+        .lowerTitle{
+            font-size: 5rem;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        .italic{
+            font-size:5rem;
+        }
+
+        .lowerTitle{
+            font-size: 3.4rem;
+            bottom: 35px;
+        }
+    }
+
+    @media screen and (max-width: 440px){
+        .footerNavLinks ul{
+            margin:0;
+            padding:0;
+
+        }
+
+        .contactInfo{
+            font-size:0.8rem;
+        }
+
+        .mainTitle{
+            font-size:  3rem;
+        }
+
+        .lowerTitle{
+            font-size:2.5rem;
+        }
+
+    }
+    
+    
+
