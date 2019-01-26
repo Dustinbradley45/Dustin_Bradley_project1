@@ -16,7 +16,10 @@ html{
     margin:0 auto;
 }
 
-/* MAIN STYLES */
+
+img{
+    display:block;
+}
 
 /* FONT STYLES
     font-family: 'Cormorant Garamond', serif;
@@ -24,9 +27,7 @@ html{
     font-family: 'Roboto', sans-serif;
 
     font-family: 'Catamaran', sans-serif;
-
  */
-
 /* UNIVERSAL STYLES */
 
 /* Read More Button Style */
@@ -126,7 +127,7 @@ input[type='checkbox']:checked + .nav-content{
 
 /* HEADER STYLES */
 header{
-    background-image:url('./assets/assets_One-home_2019-01-22/image-1.jpg');
+    background-image:url('./assets/assetsOnehome/image1.jpg');
      height: 100vh;
      background-repeat: no-repeat;
      background-size:cover;
@@ -173,9 +174,8 @@ header{
 }
 
 .mainTitle {
-    clear:both;
+   clear:both;
    padding-top: 3%;
-  
    text-align:center;
    color:white;
 }
@@ -211,9 +211,12 @@ header{
 .socialNetwork ul{
     list-style:none;
     float:right;
-   margin:0;
-   padding-right: 2.5rem;
- 
+   margin:0 auto;
+   padding-right: 2.5rem; 
+}
+
+.fa-facebook-f{
+    padding-left:2px;
 }
 
 .socialNetwork ul li{
@@ -326,38 +329,38 @@ header{
 }
 
 
-.squareGallery--Top{
+.squareGalleryTop{
     float:left;
 }
 
-.squareGallery--TopImage,
-.squareGallery--TopInfo{
+.squareGalleryTopImage,
+.squareGalleryTopInfo{
     float: right;
      width: 50%;
 
 }
-.squareGallery--BottomImage,
-.squareGallery--BottomInfo{
+.squareGalleryBottomImage,
+.squareGalleryBottomInfo{
   float:left;
   width: 50%;
 }
 
-.squareGallery--TopImage img,
-.squareGallery--BottomImage img{
+.squareGalleryTopImage img,
+.squareGalleryBottomImage img{
     width: 100%;
     height: 100%;
 }
 
-.squareGallery--TopInfo{
+.squareGalleryTopInfo{
    padding: 4rem 3rem 0 6rem;
 }
 
-.squareGallery--BottomInfo{
+.squareGalleryBottomInfo{
     padding: 4rem 6rem 0 3rem;
    
 }
 
-.squareGallery--TopInfo h5{
+.squareGalleryTopInfo h5{
     width: 60%;
 }
 
@@ -382,12 +385,13 @@ header{
 
 .shoppingLinksContainer{
     clear:both;
-    background-image: url('./assets/assets_One-home_2019-01-22/oscar-aguilar-327500-unsplash.jpg');
+    background-image: url('./assets/assetsOnehome/secondBackground.jpg');
+    background-repeat:none;
    
 }
 
 .shoppingLinks {
-  margin: 0 auto;
+  margin-left: 14%;
  max-width: 60%;
 }
 
@@ -406,7 +410,7 @@ header{
 .community,
 .events{
     color:white;
-    float:left;
+    float:right;
     padding:2rem;
     font-size: 1.5rem;
     text-align:center;
@@ -522,12 +526,13 @@ input[type='email']::placeholder{
 /* @MEDIAQUERIES */
 
 @media screen and (max-width:1325px){
-   .shoppingLinks{
-      max-width:80%;
-      
+ 
+    .shoppingLinks{
+      max-width:100%;
+      margin-right: 19%;
+      margin-left:5%;
        
    }
-   
    
 }
 
@@ -535,12 +540,11 @@ input[type='email']::placeholder{
 
 @media screen and (max-width: 1275px) {
     
-
-    .squareGallery--TopInfo{
+    .squareGalleryTopInfo{
          padding: 1rem 3rem 0 4rem;
     }
     
-    .squareGallery--BottomInfo{
+    .squareGalleryBottomInfo{
         padding: .5rem 3rem 0 2rem;
     }
     
@@ -548,7 +552,7 @@ input[type='email']::placeholder{
 }
 
 @media screen and (max-width: 1155px){
-    .squareGallery--TopInfo{
+    .squareGalleryTopInfo{
          padding: 0 2rem 0 1rem;
     }
 
@@ -568,36 +572,37 @@ input[type='email']::placeholder{
     .contactInfo{
         padding-left:2rem;
     }
+
+    .shoppingLinks{
+        margin-right:16%;
+    }
 }
 
 @media screen and (max-width: 1000px){
-    .squareGallery--TopInfo{
+    .squareGalleryTopInfo{
     clear:both; 
     padding:0;
     margin:0 ;
     width: 100%;
     line-height:1.5rem;
     text-align:center;
-   padding-bottom: 50px;
+    padding-bottom: 50px;
     } 
-    .squareGallery--TopInfo h5{
+
+    .squareGalleryTopInfo h5{
         width: 100%;
     }
-   
 
-     .squareGallery--TopImage{
+     .squareGalleryTopImage{
         width:100%;
-      
-
     }
     
-
-    .squareGallery--BottomImage{
+    .squareGalleryBottomImage{
         clear:both;
         width: 100%;
     }
 
-    .squareGallery--BottomInfo{
+    .squareGalleryBottomInfo{
         width: 100%;
         padding:0;
         margin:0;
@@ -617,6 +622,8 @@ input[type='email']::placeholder{
 
 }
 
+
+
 @media screen and (max-width: 900px) {
     .weeklyHighlightLeft{
         width: 40%;
@@ -635,13 +642,25 @@ input[type='email']::placeholder{
     .events{
        padding:.8rem;
        float:none;
+       margin-left:5rem;
     }
     
+    /* USED BIGGER IMAGE (IMG 5x2) BECAUSE THE SCALING WAS OFF ON THE LARGER IMG */
     .shoppingLinksContainer{
+        background: url('./assets/assetsOnehome/image5x2.jpg');
         background-repeat:no-repeat;
-        background-size:cover;  
-        
+        background-size:cover;     
     }
+
+    .shoppingLinksContainer p {
+        font-size: 1.3rem;
+    }
+
+    .shoppingLinks{
+       
+    }
+
+
 
       .contactInfo{
         padding-left:0rem;
@@ -687,6 +706,12 @@ input[type='email']::placeholder{
 .lowerTitle{
     font-size: 6rem;
     bottom: 70px;
+}
+
+.shopBrands,
+.community,
+.events{
+    margin-left:4rem;
 }
 }
 
@@ -759,10 +784,22 @@ input[type='email']::placeholder{
             float:left;
         }
     
-        .weeklyHighlightLeft,
+        .weeklyHighlightLeft{
+            width: 84%;
+            margin-left:8%;
+        }
+
+
         .weeklyHighlightRight{
-            width: 100%;
+            width: 96%;
+            margin-left:2%;
+            margin-right:1%;
+            font-size: .8rem;
     
+        }
+
+        .weeklyHighlightInfo p{
+            font-size:0.9rem;
         }
 
         .weeklyHighlightRight h4{
@@ -772,7 +809,7 @@ input[type='email']::placeholder{
         .weeklyHighlight .readMore{
             text-align:center;
             position:relative;
-            left:40%;
+            left:40%;   
         }
 
         .italic{
@@ -780,6 +817,12 @@ input[type='email']::placeholder{
         }
         .lowerTitle{
             font-size: 5rem;
+        }
+
+        .shopBrands,
+        .community,
+        .events{
+            margin-left: 3.5rem;
         }
     }
 
@@ -813,6 +856,47 @@ input[type='email']::placeholder{
             font-size:2.5rem;
         }
 
+        .readMore{
+            font-size:.9rem;
+        }
+        
+        .shopBrands,
+        .community,
+        .events{
+            margin-left:1.5rem;
+        }
+
+        .footerButton{
+            font-family: 'Catamaran', sans-serif;
+            font-weight: 600;
+            font-size:0.9rem;
+            line-height:1.5rem;
+            padding:10px;
+        }
+
+        .subscriptionForm p{
+            font-size: 0.8rem;
+        }
+
+        form{
+            padding-bottom:1rem;
+        }
+
+        .contactInfo h6{
+            padding-bottom:0.6rem;
+        }
+
+        .mainFooterContent{
+            padding-top:2rem;
+        }
+
+        .footerNavLinks li{
+            padding-bottom:5px;
+        }
+
+        .shoppingLinks{
+            padding-top:2rem;
+        }
     }
     
     
