@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <!-- HAMBURGER MENU -->
+        <!-- HAMBURGER MENU POP DOWN SCREEN-->
         <section class='navigation clearfix'>
             <label for='navToggle' class='navButton'>
                 <img src="./assets/assetsOneHome/hamburgerMenu.svg" alt="" class="navIcon">
@@ -75,7 +75,7 @@
     </header>
     <main>
 
-<!-- ORIGINALLY HAD ANCHOR TAGS BUT DECIDED TO USE JQUERY TO HAVE A SLIDE TOGGLE FUNCTION FOR SOME OF THE WORDS -->
+        <!-- ORIGINALLY HAD ANCHOR TAGS BUT DECIDED TO USE JQUERY TO HAVE A SLIDE TOGGLE FUNCTION FOR SOME OF THE WORDS -->
 
         <!-- NEWS ARTICLE GALLERY SECTION -->
         <section class='gallerySection wrapper'>
@@ -91,7 +91,7 @@
                     <img src='./assets/assetsOnehome/image4.jpg' alt='Two models in white clothes looking towards the camera which is in the photograph'>
                 </div>
             </div>
-        </section>  
+        </section>
 
         <!-- WEEKLY HIGHLIGHT SECTION -->
         <section class='weeklyHighlight wrapper clearfix'>
@@ -106,7 +106,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium aspernatur incidunt
                         ipsum quasi, dicta mollitia ut placeat quidem corporis velit labore repellat voluptatibus
                         ratione! Ducimus molestias consequuntur ipsa non!</p>
-                        <p class="extraWordsWeekly hideMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum, unde ullam illo blanditiis quam tenetur. Minima quis laborum maxime! Doloribus, rerum? Perspiciatis, ex repellat error dolore quisquam laborum corporis.</p>
+                    <p class="extraWordsWeekly hideMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                        rerum, unde ullam illo blanditiis quam tenetur. Minima quis laborum maxime! Doloribus, rerum?
+                        Perspiciatis, ex repellat error dolore quisquam laborum corporis.</p>
                     <button class='weeklyHighlightReadMe readMore'>Read More</button>
                 </article>
             </div>
@@ -123,8 +125,11 @@
                     <div class="squareGalleryTopInfoContainer">
                         <h5>New trends to look out for</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati odio maiores voluptas
-                        blanditiis nemo natus eligendi repellendus reprehenderit illo. Minus corporis in beatae
-                        voluptatem, corrupti maiores nihil odit vel.</p><p class="extraWordsSquareGalleryTop hideMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium tempora consequuntur sequi cupiditate quis error quas pariatur magnam, ipsam assumenda officia blanditiis. </p>
+                            blanditiis nemo natus eligendi repellendus reprehenderit illo. Minus corporis in beatae
+                            voluptatem, corrupti maiores nihil odit vel.</p>
+                        <p class="extraWordsSquareGalleryTop hideMe">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ipsum praesentium tempora consequuntur sequi cupiditate quis error quas pariatur
+                            magnam, ipsam assumenda officia blanditiis. </p>
                         <button class='readMore squareGalleryTopReadMe'>Read More</button>
                     </div>
                 </article>
@@ -138,9 +143,14 @@
                 <article class='squareGalleryBottomInfo'>
                     <div class="squareGalleryBottomInfoContainer">
                         <h5>Behind the scenes from spring/summer fashion week</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt, debitis quis nihil
-                        quia porro delectus odio ab quod illo ipsum! Illum rerum debitis odio tenetur facilis aperiam!
-                        Explicabo, earum.</p><p class='extraWordsSquareGalleryBottom hideMe'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores obcaecati quis officiis ut, ad maxime velit iste! Labore blanditiis ab necessitatibus illo iure dolorem ea, nam totam quaerat quis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt, debitis quis
+                            nihil
+                            quia porro delectus odio ab quod illo ipsum! Illum rerum debitis odio tenetur facilis
+                            aperiam!
+                            Explicabo, earum.</p>
+                        <p class='extraWordsSquareGalleryBottom hideMe'>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Minima asperiores obcaecati quis officiis ut, ad maxime velit iste!
+                            Labore blanditiis ab necessitatibus illo iure dolorem ea, nam totam quaerat quis.</p>
                         <button class='readMore squareGalleryBottomReadMe'>Read More</button>
                     </div>
                 </article>
@@ -170,15 +180,16 @@
 
         </div>
     </aside>
-    <footer>
 
+    <footer>
+            <!-- MAIN FOOTER CONTENT  -->
         <section class='mainFooterContent'>
             <div class='wrapper clearfix'>
                 <div class='subscriptionForm'>
                     <h6>Stay Updated</h6>
                     <p>Subscribe to our newsletter to stay updated.</p>
-                    <form action='' method='POST'class='clearfix'>
-                        <label for='emailInput'class='visuallyHidden'>email address</label>
+                    <form action='' method='POST' class='clearfix'>
+                        <label for='emailInput' class='visuallyHidden'>email address</label>
                         <input type='email' id='emailInput' placeholder='email address'>
                         <button type='submit' class='footerButton'>Subscribe</button>
                     </form>
@@ -205,118 +216,17 @@
                 </div>
             </div>
         </section>
-
+        <!-- COPYRIGHT  -->
         <section class='copyright'>
             <div class='wrapper'>
                 <p>Copyright © 2019 HackerYou</p>
             </div>
         </section>
     </footer>
-    
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script>
-    $(function(){
 
-        // NAV MENU SLIDE DOWN 
-
-        $('.navButton').on('click', function(){
-            $('.navContent').slideToggle('slow');
-        })
-
-        //  READ MORE FUNCTIONS
-
-        $('.weeklyHighlightReadMe').on('click', function(){
-            $('.extraWordsWeekly').slideToggle('slow');
-        })
-
-        $('.squareGalleryTopReadMe').on('click', function(){
-            $('.extraWordsSquareGalleryTop').slideToggle('slow');
-        })
-
-        $('.squareGalleryBottomReadMe').on('click', function(){
-            $('.extraWordsSquareGalleryBottom').slideToggle('slow');
-        })
-
-
-        //THANK YOU FOR SUBSCRIBING POPUP
-  
-        //USER ANSWER ARRAY
-        const userResponse=[]
-
-        // DATA TO BE APPENDED UPON CLICK
-        const appendData = (userId) => {
-        $('.emailConfirmModal').append(`
-            <h2>Thank you from <em>One</em> Magazine</h2>
-            <p class='changeThis'>A confirmation e-mail will be sent to ${userResponse[0]} shortly.</p>`)
-        }   
-
-        // IF INPUT IS BLANK AT TIME OF SUBMIT APPEND THIS DATA
-        const needEmail = () => {
-            $('.emailConfirmModal').append(`
-            <h2>Thanks! for your interest in <em>One</em> Magazine</h2>
-            <p>Please enter your e-mail address</p>`)
-        }
-
-        // ON FORM SUBMIT FUNCTION
-        const formHandle = $('form').on ('submit', function(e){
-            // PREVENT DEFAULT FORM ACTIONS - RELOAD
-            e.preventDefault();
-
-            //Save User Response in a variable
-            const userId = $('#emailInput').val()
-
-            //Create if statement; if userID isnt blank, run script and push out thank you note. if not, ask for email.
-            if(userId !== '') {
-            
-                //Push it onto the userResponse array so that it is able to be used globally
-                userResponse.push(userId)
-            
-                //Call function appendData() to put information onto modal
-                appendData();
-
-                //Get it to pop up with data
-                const popupAction = $('.emailConfirmModal').removeClass('hideMe').fadeIn('slow');
-
-            } else {
-
-                //Get it to pop up with data
-                const popupAction = $('.emailConfirmModal').removeClass('hideMe')
-
-                needEmail();
-            }
-        });
-
-        //MODAL CLOSE
-
-        // REMOVE CURRENT DATA FROM ARRAY
-        const removal = () => {
-            userResponse.splice(0, 1);
-        }
-
-        // CLOSE POP UP BY ADDING CLASS WITH PROPERTY 'display:none'
-        const popupClose = () => {
-            $('.emailConfirmModal').addClass('hideMe'); 
-        } 
-
-        // CHANGE INPUT VALUE TO A BLANK VALUE
-        const resetInput = () => {
-            $('#emailInput').val('')
-        }
-
-        //REMOVE PREVIOUS WORDS FROM THE MODAL IF USER SUBMITS AGAIN
-        const wordsRemove = () => {
-            $('.emailConfirmModal').empty();
-        }
-
-        // ACTUAL FUNCTION TO CLOSE AND RESET THE POPUP
-        const formClose = $('.exitButton').on('click', function(){
-            removal();
-            resetInput();
-            wordsRemove(this);
-            popupClose();
-
-        })
-    })
-    </script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+    <script src='scripts.js'></script>
 </body>
+
 </html>
